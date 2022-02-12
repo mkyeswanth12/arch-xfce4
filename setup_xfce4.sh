@@ -42,7 +42,7 @@ Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
     su - admin -c 'protonvpn-cli login 17btrct023 and $USER'
     #su - admin -c 'protonvpn-cli c -f'
 
-#     wget github -P /tmp/
+       git clone https://github.com/mkyeswanth12/arch-xfce4.git  /tmp/arch-xfce4/
 #
 #
 #
