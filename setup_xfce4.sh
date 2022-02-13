@@ -29,17 +29,17 @@ Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
     echo "Installing ZSH"
     sleep 3s
     pacman -S zsh zsh-autosuggestions zsh-syntax-highlighting
-    mv -f /tmp/zshrc /home/admin/zshrc
-    mv -f /tmp/zshrc_root /root/zshrc
-    touch /home/admin/zshrc_history /root/zshrc_history
+    mv -f /tmp/arch-xfce4/zshrc /home/admin/.zshrc
+    mv -f /tmp/arch-xfce4/zshrc_root /root/.zshrc
+    touch /home/admin/zsh_history /root/zsh_history
     chsh -s /usr/bin/zsh
     echo "Installing Brave & ProtonVPN"
     pacman -S brave protonvpn-cli
-    echo "Configuring ProtonVPN"
-    sleep 1s
-    echo "login using 17btrct023"
+    #echo "Configuring ProtonVPN"
+    #sleep 1s
+    #echo "login using 17btrct023"
     #su - admin -c 'whoami'
-    su - admin -c 'protonvpn-cli login 17btrct023 and $USER'
+    #su - admin -c 'protonvpn-cli login 17btrct023 and $USER'
     #su - admin -c 'protonvpn-cli c -f'
 
 #      git clone https://github.com/mkyeswanth12/arch-xfce4.git  /tmp/arch-xfce4/
@@ -50,7 +50,7 @@ Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 	sleep 1s
 	echo "Adding icons and Themes"
 	unzip /tmp/arch-xfce4/Kali-Dark.zip > /dev/null
-	tar -xzvf /tmp/blackarch-icons.tgz > /dev/null
+	tar -xzvf /tmp/arch-xfce4/blackarch-icons.tgz > /dev/null
 
 	mv -f /tmp/arch-xfce4/blackarch-icons /usr/share/icons/
 	mv -f /tmp/arch-xfce4/Kali-Dark /usr/share/themes/
