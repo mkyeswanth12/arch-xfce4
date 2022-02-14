@@ -54,6 +54,12 @@ Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 
 	mv -f /tmp/arch-xfce4/blackarch-icons /usr/share/icons/
 	mv -f /tmp/arch-xfce4/Kali-Dark /usr/share/themes/
+#
+    echo "Installing polybar"
+	pacman -S polybar ttf-font-awesome ttf-font-awesome-4 ttf-font-icons ttf-font-logos dstat
+	
+	git clone https://github.com/mkyeswanth12/My_Polybar_Conf.git /tmp/polybar/
+	cp /tmp/polybar/polybar.conf /home/admin/.config/polybar/config
 	echo "Done"
 	sleep 3s
 else
