@@ -31,7 +31,7 @@ Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
     pacman -S zsh zsh-autosuggestions zsh-syntax-highlighting
     mv -f /tmp/arch-xfce4/zshrc /home/admin/.zshrc
     mv -f /tmp/arch-xfce4/zshrc_root /root/.zshrc
-    touch /home/admin/zsh_history /root/zsh_history
+    touch /home/admin/.zsh_history /root/.zsh_history
     chsh -s /usr/bin/zsh
     echo "Installing Brave & ProtonVPN"
     pacman -S brave protonvpn-cli
