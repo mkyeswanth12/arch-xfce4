@@ -59,6 +59,7 @@ Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 	pacman -S polybar ttf-font-awesome ttf-font-awesome-4 ttf-font-icons ttf-font-logos dstat
 	
 	git clone https://github.com/mkyeswanth12/My_Polybar_Conf.git /tmp/polybar/
+	mkdir /home/admin/.config/polybar
 	cp /tmp/polybar/polybar.conf /home/admin/.config/polybar/config
 	echo "Done"
 	sleep 3s
