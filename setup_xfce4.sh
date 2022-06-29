@@ -52,8 +52,8 @@ Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 	unzip /tmp/arch-xfce4/Kali-Dark.zip > /dev/null
 	tar -xzvf /tmp/arch-xfce4/blackarch-icons.tgz > /dev/null
 
-	mv -f /tmp/arch-xfce4/blackarch-icons /usr/share/icons/
-	mv -f /tmp/arch-xfce4/Kali-Dark /usr/share/themes/
+	mv -f ./blackarch-icons /usr/share/icons/
+	mv -f ./Kali-Dark /usr/share/themes/
 #
     echo "Installing polybar"
 	pacman -S polybar ttf-font-awesome ttf-font-awesome-4 ttf-font-icons ttf-font-logos dstat
